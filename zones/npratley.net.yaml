@@ -1,6 +1,8 @@
 ---
 ? ''
-: - type: MX
+: - type: A
+    value: 27.50.90.117
+  - type: MX
     value:
       exchange: npratley-net.mail.protection.outlook.com.
       preference: 0
@@ -17,7 +19,7 @@ autodiscover:
 www:
   octodns:
     cloudflare:
-      proxied: true
+      proxied: false
   ttl: 300
   type: CNAME
-  value: hosting.devlan.io.
+  value: npratley.net.
