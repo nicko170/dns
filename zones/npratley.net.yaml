@@ -1,0 +1,23 @@
+---
+? ''
+: - type: MX
+    value:
+      exchange: npratley-net.mail.protection.outlook.com.
+      preference: 0
+  - type: TXT
+    values:
+    - MS=ms40294280
+    - v=spf1 include:_spf.google.com include:spf.protection.outlook.com ~all
+autodiscover:
+  octodns:
+    cloudflare:
+      proxied: false
+  type: CNAME
+  value: autodiscover.outlook.com.
+www:
+  octodns:
+    cloudflare:
+      proxied: true
+  ttl: 300
+  type: CNAME
+  value: hosting.devlan.io.

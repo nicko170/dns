@@ -1,0 +1,27 @@
+---
+manager:
+  max_workers: 10
+
+providers:
+  zones:
+    class: octodns.provider.yaml.YamlProvider
+    directory: ./zones
+    default_ttl: 300
+    enforce_order: true
+
+  cloudflare:
+    class: octodns.provider.cloudflare.CloudflareProvider
+    email: 'env/CLOUDFLARE_EMAIL'
+    token: 'env/CLOUDFLARE_TOKEN'
+
+  digitalocean:
+    class: octodns.provider.digitalocean.DigitalOceanProvider
+    token: 'env/DIGITALOCEAN_TOKEN'
+
+zones:
+  npratley.net.:
+    sources:
+      - zones
+    targets:
+      - cloudflare
+      - digitalocean
