@@ -1,0 +1,106 @@
+---
+? ''
+: - octodns:
+      cloudflare:
+        proxied: true
+    ttl: 300
+    type: A
+    value: 27.50.90.117
+  - type: MX
+    value:
+      exchange: devlan-io.mail.protection.outlook.com.
+      preference: 0
+  - ttl: 300
+    type: TXT
+    values:
+    - MS=ms78408701
+    - Sendinblue-code:94caa92ec49ba6c0910986ca7d81fc2c
+    - google-site-verification=leGyhw-OYDrFZux6akPoXXT_CduUNaF_nWLKXrt55yo
+    - v=spf1 a mx ip4:27.50.64.155 include:_spf.google.com include:spf.sendinblue.com
+      include:spf.protection.outlook.com ~all
+
+_dmarc:
+  type: TXT
+  value: v=DMARC1\; p=none\; sp=none\; rua=mailto:dmarc@mailinblue.com!10m\; ruf=mailto:dmarc@mailinblue.com!10m\;
+    rf=afrf\; pct=100\; ri=86400
+
+_sip._tls:
+  type: SRV
+  value:
+    port: 443
+    priority: 100
+    target: sipdir.online.lync.com.
+    weight: 1
+_sipfederationtls._tcp:
+  type: SRV
+  value:
+    port: 5061
+    priority: 100
+    target: sipfed.online.lync.com.
+    weight: 1
+autodiscover:
+  octodns:
+    cloudflare:
+      proxied: false
+  type: CNAME
+  value: autodiscover.outlook.com.
+hosting:
+  octodns:
+    cloudflare:
+      proxied: false
+  ttl: 300
+  type: A
+  value: 27.50.90.117
+
+mail._domainkey:
+  ttl: 300
+  type: TXT
+  value: k=rsa\;p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDeMVIzrCa3T14JsNY0IRv5/2V1/v2itlviLQBwXsa7shBD6TrBkswsFUToPyMRWC9tbR/5ey0nRBH0ZVxp+lsmTxid2Y2z+FApQ6ra2VsXfbJP3HE6wAO0YTVEJt1TmeczhEd2Jiz/fcabIISgXEdSpTYJhb0ct0VJRxcg4c8c7wIDAQAB
+
+pusher:
+  octodns:
+    cloudflare:
+      proxied: true
+  ttl: 300
+  type: A
+  value: 27.50.64.158
+
+s3:
+  octodns:
+    cloudflare:
+      proxied: true
+  ttl: 300
+  type: A
+  value: 27.50.64.158
+
+sip:
+  octodns:
+    cloudflare:
+      proxied: false
+  type: CNAME
+  value: sipdir.online.lync.com.
+
+
+vault:
+- octodns:
+    cloudflare:
+      proxied: false
+  ttl: 300
+  type: A
+  value: 27.50.90.117
+
+ws:
+  octodns:
+    cloudflare:
+      proxied: true
+  ttl: 300
+  type: A
+  value: 27.50.64.158
+
+www:
+  octodns:
+    cloudflare:
+      proxied: true
+  ttl: 300
+  type: CNAME
+  value: devlan.io.

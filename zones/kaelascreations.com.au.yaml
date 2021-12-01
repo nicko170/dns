@@ -1,0 +1,65 @@
+---
+? ''
+: - octodns:
+      cloudflare:
+        proxied: false
+    ttl: 300
+    type: A
+    value: 27.50.90.117
+  - type: MX
+    value:
+      exchange: kaelascreations-com-au.mail.protection.outlook.com.
+      preference: 0
+  - ttl: 300
+    type: TXT
+    values:
+      - MS=ms58763139
+      - v=spf1 a mx include:spf.protection.outlook.com ~all
+
+_dmarc:
+  type: TXT
+  value: v=DMARC1\; p=none
+_domainkey:
+  type: TXT
+  value: t=y\; o=~\;
+
+mail:
+  octodns:
+    cloudflare:
+      proxied: false
+  ttl: 300
+  type: CNAME
+  value: hosted.devlan.io.
+postal-arfnxv._domainkey:
+  ttl: 300
+  type: TXT
+  value: v=DKIM1\; t=s\; h=sha256\; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDOUrFEB7X+hVJ3F1NNBWU84V6rXjJjQLvi9BwhCifIAN9Aoq63a5WnR267Z6oObshtGUoMw09UM/CRaFAwCJvH51BhkJZI5DLKEK/oSuXQA82vJuk0brv3skeR2UKj9blLM1gpWAfY6XpGlVU1q8kXGSH+HPhuGXTtYnfFmH5STQIDAQAB\;
+
+s1._domainkey:
+  octodns:
+    cloudflare:
+      proxied: false
+  ttl: 300
+  type: CNAME
+  value: s1.domainkey.u14388389.wl140.sendgrid.net.
+s2._domainkey:
+  octodns:
+    cloudflare:
+      proxied: false
+  ttl: 300
+  type: CNAME
+  value: s2.domainkey.u14388389.wl140.sendgrid.net.
+url1985:
+  octodns:
+    cloudflare:
+      proxied: false
+  ttl: 300
+  type: CNAME
+  value: sendgrid.net.
+www:
+  octodns:
+    cloudflare:
+      proxied: false
+  ttl: 300
+  type: A
+  value: 27.50.90.117

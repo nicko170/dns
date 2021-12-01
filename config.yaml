@@ -19,7 +19,41 @@ providers:
     token: 'env/DIGITALOCEAN_TOKEN'
 
 zones:
+  devlan.io.:
+    sources:
+      - zones
+    targets:
+      - cloudflare
+
   npratley.net.:
+    sources:
+      - zones
+    targets:
+      - cloudflare
+      - digitalocean
+
+  countess.com.au.:
+    sources:
+      - zones
+    targets:
+      - cloudflare
+      - digitalocean
+
+  kaelascreations.com.au.:
+    sources:
+      - zones
+    targets:
+      - cloudflare
+      - digitalocean
+
+  idontgiveastitch.com.au.:
+    sources:
+      - zones
+    targets:
+      - cloudflare
+      - digitalocean
+
+  tjerkstra.com.au.:
     sources:
       - zones
     targets:
