@@ -6,7 +6,7 @@
     ttl: 300
     type: A
     values:
-    - 27.50.64.158
+    - 27.50.90.117
   - ttl: 300
     type: MX
     value:
