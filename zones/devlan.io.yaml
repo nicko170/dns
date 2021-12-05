@@ -64,12 +64,12 @@ hv01.syd:
 hv02.syd:
   ttl: 300
   type: A
-  value: 192.168.0.101
+  value: 192.168.0.102
 
 hv03.syd:
   ttl: 300
   type: A
-  value: 192.168.0.101
+  value: 192.168.0.103
 
 mail._domainkey:
   ttl: 300
