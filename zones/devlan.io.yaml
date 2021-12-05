@@ -31,6 +31,7 @@ _sip._tls:
     priority: 100
     target: sipdir.online.lync.com.
     weight: 1
+
 _sipfederationtls._tcp:
   type: SRV
   value:
@@ -38,12 +39,15 @@ _sipfederationtls._tcp:
     priority: 100
     target: sipfed.online.lync.com.
     weight: 1
+
 autodiscover:
   octodns:
     cloudflare:
       proxied: false
   type: CNAME
   value: autodiscover.outlook.com.
+
+
 hosting:
   octodns:
     cloudflare:
@@ -51,6 +55,26 @@ hosting:
   ttl: 300
   type: A
   value: 27.50.90.117
+
+hv01.syd:
+  ttl: 300
+  type: A
+  value: 192.168.0.101
+
+hv02.syd:
+  ttl: 300
+  type: A
+  value: 192.168.0.101
+
+hv03.syd:
+  ttl: 300
+  type: A
+  value: 192.168.0.101
+
+vcsa:
+  ttl: 300
+  type: A
+  value: 192.168.0.200
 
 mail._domainkey:
   ttl: 300
