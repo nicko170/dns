@@ -71,11 +71,6 @@ hv03.syd:
   type: A
   value: 192.168.0.101
 
-vcsa:
-  ttl: 300
-  type: A
-  value: 192.168.0.200
-
 mail._domainkey:
   ttl: 300
   type: TXT
@@ -112,6 +107,13 @@ vault:
   ttl: 300
   type: A
   value: 27.50.90.117
+
+
+vcsa:
+  ttl: 300
+  type: A
+  value: 192.168.0.200
+
 
 ws:
   octodns:
