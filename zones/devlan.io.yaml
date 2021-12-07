@@ -47,6 +47,10 @@ autodiscover:
   type: CNAME
   value: autodiscover.outlook.com.
 
+home:
+  ttl: 300
+  type: A
+  value: 159.196.109.76
 
 hosting:
   octodns:
@@ -104,6 +108,10 @@ sip:
   type: CNAME
   value: sipdir.online.lync.com.
 
+sw:
+  ttl: 300
+  type: A
+  value: 192.168.0.1
 
 vault:
 - octodns:
