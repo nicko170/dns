@@ -47,16 +47,6 @@ autodiscover:
   type: CNAME
   value: autodiscover.outlook.com.
 
-syd-cr01:
-  ttl: 300
-  type: A
-  value: 192.168.0.1
-
-syd-sw01:
-  ttl: 300
-  type: A
-  value: 192.168.0.2
-
 home-ap01:
   ttl: 300
   type: A
@@ -127,6 +117,16 @@ sip:
       proxied: false
   type: CNAME
   value: sipdir.online.lync.com.
+
+syd-cr01:
+  ttl: 300
+  type: A
+  value: 192.168.0.1
+
+syd-sw01:
+  ttl: 300
+  type: A
+  value: 192.168.0.2
 
 vault:
 - octodns:
