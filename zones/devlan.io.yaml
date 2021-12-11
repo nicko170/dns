@@ -47,6 +47,11 @@ autodiscover:
   type: CNAME
   value: autodiscover.outlook.com.
 
+home:
+  ttl: 300
+  type: A
+  value: 159.196.109.76
+
 home-ap01:
   ttl: 300
   type: A
