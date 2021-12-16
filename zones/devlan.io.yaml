@@ -47,6 +47,21 @@ autodiscover:
   type: CNAME
   value: autodiscover.outlook.com.
 
+file1:
+  ttl: 300
+  type: A
+  value: 192.168.0.161
+
+file2:
+  ttl: 300
+  type: A
+  value: 192.168.0.162
+
+file3:
+  ttl: 300
+  type: A
+  value: 192.168.0.163
+
 home:
   ttl: 300
   type: A
