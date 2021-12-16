@@ -98,6 +98,14 @@ k8s:
   type: CNAME
   value: 7748a866-7f8d-40ce-a00a-df1108a49eb2.cfargotunnel.com.
 
+k8s-proxy:
+  octodns:
+    cloudflare:
+      proxied: true
+  ttl: 300
+  type: CNAME
+  value: 7748a866-7f8d-40ce-a00a-df1108a49eb2.cfargotunnel.com.
+
 mail._domainkey:
   ttl: 300
   type: TXT
