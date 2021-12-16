@@ -180,7 +180,11 @@ vault:
   type: A
   value: 27.50.90.117
 
-
+vcd:
+  ttl: 300
+  type: A
+  value: 192.168.0.204
+  
 vcsa:
   ttl: 300
   type: A
