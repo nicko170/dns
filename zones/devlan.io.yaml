@@ -90,6 +90,14 @@ hv03.syd:
   type: A
   value: 192.168.0.103
 
+k8s:
+  octodns:
+    cloudflare:
+      proxied: true
+  ttl: 300
+  type: CNAME
+  value: 7748a866-7f8d-40ce-a00a-df1108a49eb2.cfargotunnel.com.
+
 mail._domainkey:
   ttl: 300
   type: TXT
